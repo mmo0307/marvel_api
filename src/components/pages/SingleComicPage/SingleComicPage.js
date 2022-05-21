@@ -1,13 +1,12 @@
 import {useState, useEffect} from 'react';
 import { Link, useParams } from 'react-router-dom';
 
-import useMarvelService from '../../services/MarvelService';
-import Spinner from '../spinner/Spinner';
-import ErrorMessage from '../errorMessage/ErrorMessage';
-import Skeleton from '../skeleton/Skeleton'
+import useMarvelService from '../../../services/MarvelService';
+import Spinner from '../../spinner/Spinner';
+import ErrorMessage from '../../errorMessage/ErrorMessage';
+import Skeleton from '../../skeleton/Skeleton'
 
 import './singleComicPage.scss';
-
 
 const SingleComicPage = (props) => {
     const {comicId} = useParams();
